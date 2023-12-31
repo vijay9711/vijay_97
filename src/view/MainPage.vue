@@ -1,8 +1,8 @@
 <template>
   <div>
-    <nav-bar-vue/>
+    <nav-bar-vue @onThemeChange="(event)=>{this.$emit('onThemeChange',event)}"/>
     <div class="main-wrapper">
-      <LandingComponentVue/>
+      <LandingComponentVue />
     </div>  
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <MainPageVue/>
+  <div :class='darkMode ? "dark" : ""'>
+    <MainPageVue @onThemeChange="onThemeChange($event)"/>
   </div>
 </template>
 
@@ -12,6 +12,17 @@ export default {
   components: {
     // HelloWorld
     MainPageVue
+  },
+  data(){
+    return{
+      darkMode:true
+    }
+  },
+  methods:{
+    onThemeChange(event){
+      this.darkMode = event;
+      console.log(this.darkMode)
+    }
   }
 }
 </script>
@@ -23,6 +34,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+}
+</style>
+<style lang="postcss">
+body * {
+  @apply transition-colors duration-300;
 }
 </style>
