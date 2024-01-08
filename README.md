@@ -1,5 +1,7 @@
 # vijay_97
 
+Check site here: https://vijay97.netlify.app/
+
 ## Project setup
 ```
 npm install
