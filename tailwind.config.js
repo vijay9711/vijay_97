@@ -16,14 +16,14 @@ module.exports = {
       'load-name': 'load-name 5s linear 1'
     },
     fontSize: {
-      sm: '0.8vw',
-      base: '1vw',
-      xl: '1.25vw',
-      '2xl': '1.563vw',
-      '3xl': '1.953vw',
-      '4xl': '2.441vw',
-      '5xl': '3.052vw',
-      '8xl': '5vw'
+      sm: '0.75vw',
+      md: '1vw',
+      xl: '2.50vw',
+      '2xl': '2.75vw',
+      '3xl': '3vw',
+      '4xl': '3.50vw',
+      '5xl': '4vw',
+      '8xl': '4.5vw'
     },
     screens: {
       sm: '480px',

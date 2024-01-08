@@ -1,5 +1,5 @@
 <template>
-  <div :class='darkMode ? "dark" : ""'>
+  <div :class='darkMode ? "dark" : ""' class="bg-gray-dark">
     <MainPageVue @onThemeChange="onThemeChange($event)"/>
   </div>
 </template>
@@ -29,7 +29,7 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

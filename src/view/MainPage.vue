@@ -1,8 +1,11 @@
 <template>
   <div>
-    <nav-bar-vue @onThemeChange="(event)=>{this.$emit('onThemeChange',event)}"/>
-    <div class="main-wrapper">
+    <div class="sticky top-0">
+      <nav-bar-vue @onThemeChange="(event)=>{this.$emit('onThemeChange',event)}"/>
+    </div>
+    <div class="-mt-16">
       <LandingComponentVue />
+      <ExperienceComponent />
     </div>  
   </div>
 </template>
@@ -10,15 +13,19 @@
 <script>
 import LandingComponentVue from '@/components/LandingComponent.vue'
 import NavBarVue from '@/components/NavBar.vue'
-
+import ExperienceComponent from '@/components/ExperienceComponent.vue';
 export default {
   components:{
     LandingComponentVue,
-    NavBarVue
+    ExperienceComponent,
+    NavBarVue,
+    
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+  .main-wrapper{
+    margin:0px 20px;
+  }
 </style>
