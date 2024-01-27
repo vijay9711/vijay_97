@@ -18,15 +18,23 @@
 export default{
   data(){
     return{
-      isDark:true
+      isDark: localStorage.getItem("theme") != null ? localStorage.getItem("theme") : true
     }
   },
-
+  props:['currentTheme'],
+  
+  beforeMount(){
+    // this.setTheme();
+  },
   methods:{
+    // setTheme(){
+    //   console.log(localStorage.getItem("theme"));
+    //   this.$emit('theme', this.isDark);
+    // },
     toggleTheme(){
       this.isDark = !this.isDark;
       this.$emit('theme', this.isDark ? true:false);
-      console.log(this.isDark)
+      console.log(this.isDark);
     }
   }
 }

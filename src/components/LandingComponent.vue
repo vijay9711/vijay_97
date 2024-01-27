@@ -5,13 +5,9 @@
         <p class="text-text-gray-dark text-xl dark:text-white">Hi, I'm <span class="text-8xl dark:text-white">vijay</span></p>
         <p class="text-text-gray-dark text-md dark:text-white">
           I am a Senior Software Development Engineer who is always discovering
-          something new. As a developer solving problems by thinking from the
-          client side is one of great quality. Designing an application that is
-          truly helpful to the user by using my creative thoughts and
-          problem-solving skills is my ultimate goal. I am always ready to learn
-          new technologies for the client's requirements and fix them with code.
-          Being a web developer, I learned how to learn without missing
-          deadlines.
+          something new. Eager for opportunities in a dynamic, challenging environment to leverage my skills for personal growth and contribute to organizational success.
+          Self-motivated IT professional with expertise in JavaScript, TypeScript, Angular JS, React JS, Vue JS, Node JS CSS, and mobile-responsive website development.
+          Seeking a role that aligns with my passion for technology and allows me to make meaningful contributions to both my career and the organization.
         </p>
       </div>
       <div class="hi-vector col-span-2">

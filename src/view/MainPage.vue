@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="sticky top-0">
-      <nav-bar-vue @onThemeChange="(event)=>{this.$emit('onThemeChange',event)}"/>
+      <nav-bar-vue :currentTheme="currentTheme" @onThemeChange="(event)=>{this.$emit('onThemeChange',event)}"/>
     </div>
     <div class="-mt-16">
       <LandingComponentVue />
@@ -20,7 +20,8 @@ export default {
     ExperienceComponent,
     NavBarVue,
     
-  }
+  },
+  props:['currentTheme'],
 }
 </script>
 

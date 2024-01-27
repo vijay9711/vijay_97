@@ -1,10 +1,15 @@
 // tailwind.config.js
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    './Pages/**/*.{html,js}',
-    './Components/**/*.{html,js}',
-  ],
+  content:{ 
+    relative: true,
+    transform: (content) => content.replace(/taos:/g, ''),
+  files:[
+      "./src/**/*.{js,jsx,ts,tsx}",
+      './Pages/**/*.{html,js}',
+      './Components/**/*.{html,js}',
+      './src/*.{html,js}',
+    ],
+  },
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
@@ -103,5 +108,12 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('taos/plugin')
+  ],
+  safelist: [
+    '!duration-[0ms]',
+    '!delay-[0ms]',
+    'html.js :where([class*="taos:"]:not(.taos-init))'
+  ],
 }
