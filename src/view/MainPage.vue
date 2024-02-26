@@ -6,6 +6,7 @@
     <div class="-mt-16">
       <LandingComponentVue />
       <ExperienceComponent />
+      <ProjectComponent />
     </div>  
   </div>
 </template>
@@ -14,12 +15,13 @@
 import LandingComponentVue from '@/components/LandingComponent.vue'
 import NavBarVue from '@/components/NavBar.vue'
 import ExperienceComponent from '@/components/ExperienceComponent.vue';
+import ProjectComponent from '@/components/ProjectComponent.vue';
 export default {
   components:{
     LandingComponentVue,
     ExperienceComponent,
+    ProjectComponent,
     NavBarVue,
-    
   },
   props:['currentTheme'],
 }
