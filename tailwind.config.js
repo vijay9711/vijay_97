@@ -31,7 +31,7 @@ module.exports = {
       '8xl': '4.5vw'
     },
     screens: {
-      sm: '480px',
+      sm: '380px',
       md: '768px',
       lg: '976px',
       xl: '1440px',

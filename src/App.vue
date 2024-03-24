@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div class="dark:bg-gray-dark bg-white">
     <MainPageVue :currentTheme="darkMode" @onThemeChange="onThemeChange($event)"/>
   </div>
 </template>
