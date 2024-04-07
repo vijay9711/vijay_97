@@ -1,9 +1,10 @@
 <template>
   <div id="vj" class="bg-white h-screen dark:bg-gray-dark flex items-center px-10">
-    <div class="grid grid-cols-4">
-      <div class="self-content w-9/12 m-auto col-span-2">
-        <p class="text-text-gray-dark text-xl dark:text-white">Hi, I'm <span class="text-8xl dark:text-white">vijay</span></p>
-        <p class="text-text-gray-dark text-md dark:text-white">
+    <div class="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-1">
+      <div class="self-content lg:w-9/12 sm:w-full sm:col-span-1 lg:m-auto lg:col-span-2 sm:mb-5">
+        <p class="text-text-gray-dark sm:text-[2rem] lg:text-xl dark:text-white m-0">Hey,</p>
+        <p class="text-text-gray-dark lg:text-8xl sm:text-[4rem] dark:text-white"> I'm <span class="lg:text-8xl sm:text-[4rem] dark:text-white">vijay</span></p>
+        <p class="text-text-gray-dark sm:text-[1.1rem] lg:text-md dark:text-white">
           I am a Senior Software Development Engineer who is always discovering
           something new. Eager for opportunities in a dynamic, challenging environment to leverage my skills for personal growth and contribute to organizational success.
           Self-motivated IT professional with expertise in JavaScript, TypeScript, Angular JS, React JS, Vue JS, Node JS CSS, and mobile-responsive website development.
@@ -18,10 +19,14 @@
 </template>
 
 <script>
-export default {};
-</script>ß
+export default {
+  components: {
+  }
+};
+</script>
 
 <style scoped>
+
 .self-content{
   align-content: end;
   align-items: end;

@@ -3,6 +3,9 @@ import App from './App.vue'
 import './index.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Router from "./router";
+import router from "./router";
 
-createApp(App).use(Router).use(AOS.init()).mount('#app');
+const app = createApp(App);
+app.use(router);
+app.use(AOS.init());
+app.mount('#app');

@@ -1,6 +1,5 @@
 <template>
   <div
-    id="experience"
     class="bg-white h-screen dark:bg-gray-dark flex items-center overflow-hidden"
   >
     <div class="lg:hidden md:block w-screen mt-10">
@@ -25,7 +24,7 @@
           </div>
         </div>
         <div
-          class="text-white dark:white flex-col flex justify-between mt-10 overflow-y-auto overflow-x-hidden py-6"
+          class="text-white dark:white flex-col flex overflow-y-auto overflow-x-hidden pb-[6rem] h-screen"
         >
           <div
             v-for="(item, index) in experinceList"
@@ -33,7 +32,8 @@
             data-aos="fade-left"
             :data-aos-delay="item.duration"
             data-aos-easing="ease-in-out"
-            class="border-l-4 shadow-lg border-l-gray-dark dark:border-l-white mx-10 p-3 my-3"
+            data-aos-offset="0"
+            class="border-l-4 shadow-lg border-l-gray-dark dark:border-l-white mx-10 p-3 my-2"
           >
             <div class="m-auto">
               <h5
