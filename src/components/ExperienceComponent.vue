@@ -34,7 +34,7 @@
             :data-aos-delay="item.duration"
             data-aos-easing="ease-in-out"
             data-aos-offset="0"
-            class="border-l-4 z-0 shadow-lg border-l-gray-dark dark:border-l-white mx-10 p-3 my-2"
+            class="border-l-4 shadow-lg border-l-gray-dark dark:border-l-white mx-10 p-3 my-2"
           >
             <div class="m-auto">
               <h5
@@ -85,10 +85,10 @@
               class="flex h-[50px] items-center justify-center"
             >
               <div
-                class="z-10 flex items-center justify-center w-6 h-6 bg-gray-dark rounded-full ring-0 ring-gray-dark dark:bg-white sm:ring-8 dark:ring-white shrink-0"
+                class=" flex items-center justify-center w-6 h-6 bg-gray-dark rounded-full ring-0 ring-gray-dark dark:bg-white sm:ring-8 dark:ring-white shrink-0"
               >
                 <div
-                  class="w-4 h-4 z-10 flex rounded-full shrink-0 bg-white dark:bg-gray-dark"
+                  class="w-4 h-4 flex rounded-full shrink-0 bg-white dark:bg-gray-dark"
                 ></div>
               </div>
               <div
@@ -142,10 +142,10 @@
               class="flex h-[50px] items-center justify-center"
             >
               <div
-                class="z-10 flex items-center justify-center w-6 h-6 bg-gray-dark rounded-full ring-0 ring-gray-dark dark:bg-white sm:ring-8 dark:ring-white shrink-0"
+                class=" flex items-center justify-center w-6 h-6 bg-gray-dark rounded-full ring-0 ring-gray-dark dark:bg-white sm:ring-8 dark:ring-white shrink-0"
               >
                 <div
-                  class="w-4 h-4 z-10 flex rounded-full shrink-0 bg-white dark:bg-gray-dark"
+                  class="w-4 h-4 flex rounded-full shrink-0 bg-white dark:bg-gray-dark"
                 ></div>
               </div>
               <div

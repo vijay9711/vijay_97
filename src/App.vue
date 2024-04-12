@@ -1,9 +1,9 @@
 <template>
-  <div class="dark:bg-gray-dark bg-white">
+  <div class="dark:bg-gray-dark bg-white z-50">
     <MainPageVue :currentTheme="darkMode" @onThemeChange="onThemeChange($event)"/>
     <!-- <router-link to="project">project</router-link> -->
   </div>
-  <div>
+  <div class="xs:-z-10 xs:absolute md:relative md:z-0">
     <router-view></router-view>
     <!-- <router-view v-slot="{ Component, route }">
         <transition
