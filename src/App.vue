@@ -1,19 +1,30 @@
 <template>
   <div class="dark:bg-gray-dark bg-white">
     <MainPageVue :currentTheme="darkMode" @onThemeChange="onThemeChange($event)"/>
+    <!-- <router-link to="project">project</router-link> -->
+  </div>
+  <div>
+    <router-view></router-view>
+    <!-- <router-view v-slot="{ Component, route }">
+        <transition
+          :leave-active-class="route.meta.leaveClass"
+          :enter-active-class="route.meta.enterClass"
+        >
+          <component :is="Component"></component>
+        </transition>
+      </router-view> -->
   </div>
 </template>
 
 <script>
 import MainPageVue from './view/MainPage.vue';
 import { useDark, useToggle } from "@vueuse/core";
-// import HelloWorld from './components/HelloWorld.vue';
+
 const isDark = useDark();
 const toggleDark = useToggle(isDark);
 export default {
   name: 'App',
   components: {
-    // HelloWorld
     MainPageVue
   },
   data(){
@@ -24,7 +35,6 @@ export default {
   methods:{
     onThemeChange(){
       toggleDark();
-      // this.darkMode = event;
     }
   }
 }

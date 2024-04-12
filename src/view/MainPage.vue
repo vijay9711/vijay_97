@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="sticky top-0">
+  <div class="h-[60px]">
+    <div class="fixed top-0 w-screen">
       <nav-bar-vue
         :currentTheme="currentTheme"
         @onThemeChange="
@@ -10,8 +10,8 @@
         "
       />
     </div>
-    <div class="overflow-x-hidden">
-      <router-view></router-view>
+    <!-- <div class="overflow-x-hidden"> -->
+      <!-- <router-view></router-view> -->
       <!-- <router-view v-slot="{ Component, route }">
         <transition
           :leave-active-class="route.meta.leaveClass"
@@ -20,7 +20,7 @@
           <component :is="Component"></component>
         </transition>
       </router-view> -->
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 
