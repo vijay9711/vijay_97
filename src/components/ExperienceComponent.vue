@@ -102,7 +102,7 @@
               data-aos-easing="ease-in-out"
               v-if="index % 2 == 0"
             >
-              <h3 class="text-lg font-semibold text-gray-dark dark:text-white">
+              <h3 class="text-md font-semibold text-gray-dark dark:text-white">
                 {{ item.name }}
               </h3>
               <time
@@ -126,7 +126,7 @@
               :data-aos-delay="item.duration"
               data-aos-easing="ease-in-out"
             >
-              <h3 class="text-lg font-semibold text-gray-dark dark:text-white">
+              <h3 class="text-md font-semibold text-gray-dark dark:text-white">
                 {{ item.name }}
               </h3>
               <time
@@ -322,7 +322,7 @@ export default {
         ],
         2024: [
           {
-            name: "Property Management System (University Project)",
+            name: "HOMVA Property Management System (University Project)",
             description:
               "Utilized React.js to build the user interface and integrated the functionality to favorite and unfavorite properties seamlessly using Spring Boot on the backend.",
             duration: "300",
