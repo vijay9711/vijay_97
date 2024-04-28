@@ -16,6 +16,7 @@ module.exports = {
     fontSize: {
       sm: '0.75vw',
       md: '1vw',
+      lg: '1.5vw',
       xl: '2.50vw',
       '2xl': '2.75vw',
       '3xl': '3vw',
@@ -42,7 +43,8 @@ module.exports = {
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
       'red': '#bf4623',
-      'darkGreen': '#323232'
+      'darkGreen': '#323232',
+      'card': '#546E7A50'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

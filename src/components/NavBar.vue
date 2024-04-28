@@ -3,7 +3,7 @@
     <div
       class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
     >
-      <a href="https://flowbite.com/" class="flex items-center">
+      <a href="https://vijay97.netlify.app/" class="flex items-center">
         <img
           src="../assets/logo/Vijay.svg"
           class="h-8 block dark:hidden"
@@ -16,7 +16,7 @@
         />
       </a>
       <div
-        class="w-full xs:transition-transform xs:translate-x-full bg-white dark:bg-gray-dark md:translate-x-0 md:block md:w-auto xs:h-[28vh] xs:rounded-bl-full lg:relative md:relative sm:absolute xs:absolute xs:top-0 s:top-0 xs:right-0 s:right-0 lg:h-auto md:h-auto xs:w-[48vw] md:shadow-none"
+        class="w-full xs:transition-transform xs:translate-x-full bg-white dark:bg-gray-dark md:translate-x-0 md:block md:w-auto xs:h-[25vh] xs:rounded-bl-full lg:relative md:relative sm:absolute xs:absolute xs:top-0 s:top-0 xs:right-0 s:right-0 lg:h-auto md:h-auto xs:w-[35vw] md:shadow-none"
         aria-labelledby="drawer-navigation-label"
         :class="isSideBar ? 'xs:!translate-x-0 shadow-sidebar' : ''"
         id="navbar-default"
@@ -86,13 +86,13 @@
               >Experience</a
             >
           </li>
-          <!-- <li>
+          <li>
             <a
               @click="() => goTo('/project')"
               class="block cursor-pointer py-2 bg-white text-gray-dark dark:bg-gray-dark px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Project</a
             >
-          </li> -->
+          </li>
           <li>
             <ThemeButtonVue
               :currentTheme="currentTheme"
