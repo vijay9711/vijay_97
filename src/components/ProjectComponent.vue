@@ -1,11 +1,11 @@
 <template>
   <div
     id="project"
-    class="bg-white h-screen dark:bg-gray-dark items-center overflow-auto"
+    class="bg-white h-screen dark:bg-gray-dark items-center overflow-auto w-screen"
   >
-    <div class="lg:mx-[300px] md:mx-[100px] mb-[50px] grid lg:grid-cols-2 xs:grid-cols-1">
+    <div class="w-fit mx-auto mb-[100px] grid lg:grid-cols-2 xs:grid-cols-1 gap-5">
       <div
-        class="rounded-2xl shadow-lg m-5 mb-7 flex"
+        class="rounded-2xl shadow-lg xs:mx-auto flex sm:max-w-[300px] md:max-w-[450px]"
         v-for="(project, index) in projectList"
         :key="index"
       >
@@ -34,31 +34,36 @@ export default {
               name: "react-native",
               type: "color",
               lable:"React JS",
-              source:"icon8"
+              source:"icon8",
+              link: "https://react.dev/"
             },
             {
               name: "nail-polish-",
               type: "emoji",
               lable:"Styled components",
-              source:"icon8"
+              source:"icon8",
+              link: "https://styled-components.com/"
             },
             {
               name: "tailwindcss",
               type: "color",
               lable:"Tailwind CSS",
-              source:"icon8"
+              source:"icon8",
+              link:"https://tailwindcss.com/"
             },
             {
               name:"themoviedb",
               type: "color",
               lable:"TMDB API's",
-              source:"icon8"
+              source:"icon8",
+              link:"https://www.themoviedb.org/?language=en-US"
             },
             {
               name:"github",
               type:"sf-regular-filled",
               lable:"Github Host",
-              source:"icon8"
+              source:"icon8",
+              link:"https://pages.github.com/"
             }
           ],
         },
@@ -73,19 +78,22 @@ export default {
               name: "vue-js",
               type: "color",
               lable:"Vue JS",
-              source:"icon8"
+              source:"icon8",
+              link:"https://vuejs.org/"
             },
             {
               name: "tailwindcss",
               type: "color",
               lable:"Tailwind CSS",
-              source:"icon8"
+              source:"icon8",
+              link:"https://tailwindcss.com/"
             },
             {
               name:"external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo",
               type: "external-tal-revivo-shadow-tal-revivo",
               lable:"Netlify",
-              source:"icon8"
+              source:"icon8",
+              link:"https://www.netlify.com/"
             }
           ],
         },
@@ -100,13 +108,15 @@ export default {
               name: "react-native",
               type: "color",
               lable:"React JS",
-              source:"icon8"
+              source:"icon8",
+              link: "https://react.dev/"
             },
             {
               name: "tailwindcss",
               type: "color",
               lable:"Tailwind CSS",
-              source:"icon8"
+              source:"icon8",
+              link:"https://tailwindcss.com/"
             }
           ],
         },
