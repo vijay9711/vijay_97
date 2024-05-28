@@ -10,17 +10,6 @@
         "
       />
     </div>
-    <!-- <div class="overflow-x-hidden"> -->
-      <!-- <router-view></router-view> -->
-      <!-- <router-view v-slot="{ Component, route }">
-        <transition
-          :leave-active-class="route.meta.leaveClass"
-          :enter-active-class="route.meta.enterClass"
-        >
-          <component :is="Component"></component>
-        </transition>
-      </router-view> -->
-    <!-- </div> -->
   </div>
 </template>
 
