@@ -16,7 +16,7 @@
         />
       </a>
       <div
-        class="w-full xs:transition-transform xs:translate-x-full bg-white dark:bg-gray-dark md:translate-x-0 md:block md:w-auto xs:h-[25vh] xs:rounded-bl-full lg:relative md:relative sm:absolute xs:absolute xs:top-0 s:top-0 xs:right-0 s:right-0 lg:h-auto md:h-auto xs:w-[35vw] md:shadow-none"
+        class="w-full xs:transition-transform xs:translate-x-full bg-white dark:bg-gray-dark md:translate-x-0 md:block md:w-auto xs:h-[25vh] xs:rounded-bl-full lg:relative md:relative sm:absolute xs:absolute xs:top-0 s:top-0 xs:right-0 s:right-0 lg:h-auto md:h-auto xs:w-[40vw] md:shadow-none"
         aria-labelledby="drawer-navigation-label"
         :class="isSideBar ? 'xs:!translate-x-0 shadow-sidebar' : ''"
         id="navbar-default"
@@ -69,7 +69,7 @@
           </svg>
         </button>
         <ul
-          class="font-medium xs:border-none xs:justify-evenly flex bg-white dark:bg-gray-dark lg:items-center xs:rounded-bl-full xs:h-full lg:h-auto md:h-auto xs:mt-0 s:mt-0 xs:flex sm:flex flex-col p-4 md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 xs:items-end"
+          class="font-medium xs:border-none flex bg-white dark:bg-gray-dark lg:items-center xs:rounded-bl-full xs:h-full lg:h-auto md:h-auto xs:mt-0 s:mt-0 xs:flex sm:flex flex-col p-4 md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 xs:items-end"
         >
           <li>
             <a
@@ -93,7 +93,7 @@
               >Project</a
             >
           </li>
-          <li>
+          <li class="mt-auto">
             <ThemeButtonVue
               :currentTheme="currentTheme"
               @theme="
