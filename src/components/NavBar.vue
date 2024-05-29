@@ -71,7 +71,7 @@
         <ul
           class="font-medium xs:border-none flex bg-white dark:bg-gray-dark lg:items-center xs:rounded-bl-full xs:h-full lg:h-auto md:h-auto xs:mt-0 s:mt-0 xs:flex sm:flex flex-col p-4 md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 xs:items-end"
         >
-          <li>
+          <!-- <li>
             <a
               @click="() => goTo('/')"
               class="block cursor-pointer py-2 bg-white text-gray-dark dark:bg-gray-dark px-3 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
@@ -91,6 +91,13 @@
               @click="() => goTo('/project')"
               class="block cursor-pointer py-2 bg-white text-gray-dark dark:bg-gray-dark px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Project</a
+            >
+          </li> -->
+          <li v-for="(item,index) of navItem" :key="index">
+            <a
+              @click="() => goTo(item.path)"
+              class="block cursor-pointer py-2 bg-white text-gray-dark dark:bg-gray-dark px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >{{ item.name }}</a
             >
           </li>
           <li class="mt-auto">
@@ -118,6 +125,24 @@ export default {
   data() {
     return {
       isSideBar: false,
+      navItem:[
+        {
+          name:'Welcome',
+          path:"/"
+        },
+        {
+          name:"Experience",
+          path:"/experience"
+        },
+        {
+          name:"Project",
+          path:"/project"
+        },
+        // {
+        //   name:"Who am I?",
+        //   path:"/about-me"
+        // }
+      ]
     };
   },
   props: ["currentTheme"],

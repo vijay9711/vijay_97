@@ -4,7 +4,7 @@ import LandingComponent from './components/LandingComponent';
 import ExperienceComponent from './components/ExperienceComponent';
 import ProjectComponent from "./components/ProjectComponent";
 // import HelloWorld from "./components/HelloWorld";
-
+import AboutMe from "./components/AboutMe";
 const routes = [
   {
     name:"Home",
@@ -26,6 +26,14 @@ const routes = [
   {
     name:"Project",
     path: '/project', component: ProjectComponent,
+    meta: {
+      enterClass: "animate__animated animate__fadeIn",
+      leaveClass: "animate__animated animate__fadeOut"
+    }
+  },
+  {
+    name:"About Me",
+    path: '/about-me', component: AboutMe,
     meta: {
       enterClass: "animate__animated animate__fadeIn",
       leaveClass: "animate__animated animate__fadeOut"
