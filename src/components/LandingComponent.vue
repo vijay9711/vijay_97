@@ -5,7 +5,7 @@
         <p class="text-text-gray-dark sm:text-[2rem] lg:text-xl dark:text-white m-0">Hey, I'm <span class="lg:text-8xl sm:text-[4rem] dark:text-white">vijay</span></p>
         <!-- <p class="text-text-gray-dark lg:text-8xl xs:text-[2rem] sm:text-[4rem] dark:text-white"> </p> -->
         <p class="text-text-gray-dark sm:text-[1.1rem] lg:text-md dark:text-white">
-          Welcome to my portfolio! I'm a Senior Software Development Engineer passionate about innovation and continuous learning. I excel in dynamic environments, driving personal growth and contributing to organizational success. Explore my projects and let's connect to create exceptional digital experiences together.
+          Welcome to my portfolio! I'm a Full-stack Web Developer passionate about innovation and continuous learning. I excel in dynamic environments, driving personal growth and contributing to organizational success. Explore my projects and let's connect to create exceptional digital experiences together.
         </p>
       </div>
       <div class="hi-vector lg:col-span-2">

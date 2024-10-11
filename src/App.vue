@@ -23,6 +23,7 @@
 <script>
 import MainPageVue from "./view/MainPage.vue";
 import { useDark, useToggle } from "@vueuse/core";
+
 // import particlesJS from "particles.js";
 // import 'particles.js/particles';
 // const particlesJS = window.particlesJS;
