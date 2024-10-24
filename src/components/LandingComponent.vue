@@ -1,5 +1,5 @@
 <template>
-  <div id="vj" class="bg-white h-screen dark:bg-gray-dark flex items-center px-10">
+  <div id="vj" class="h-screen flex items-center px-10">
     <div class="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-1">
       <div class="self-content lg:w-9/12 sm:w-full sm:col-span-1 lg:m-auto lg:col-span-2 sm:mb-5">
         <p class="text-text-gray-dark sm:text-[2rem] lg:text-xl dark:text-white m-0">Hey, I'm <span class="lg:text-8xl sm:text-[4rem] dark:text-white">vijay</span></p>

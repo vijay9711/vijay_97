@@ -1,7 +1,7 @@
 <template>
   <div
     id="project"
-    class="bg-white h-screen dark:bg-gray-dark items-center overflow-auto w-screen"
+    class= "h-screen items-center overflow-auto w-screen"
   >
     <div class="w-fit mx-auto mb-[100px] grid lg:grid-cols-2 xs:grid-cols-1 gap-5">
       <div

@@ -139,8 +139,8 @@ export default {
           path:"/project"
         },
         {
-          name:"Who am I?",
-          path:"/about-me"
+          name:"Skills",
+          path:"/skills"
         }
       ]
     };

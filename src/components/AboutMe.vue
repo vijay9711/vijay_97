@@ -9,9 +9,8 @@
             data-aos="flip-up"
             :data-aos-delay="item.duration"
             data-aos-easing="linear"
-            data-aos-offset="0"
             v-for="(item, index) of myList" :Key="index" 
-            class="card"
+            :class="`${selectedItem.id == item.id ? '!bg-none border !bg-opacity-5 card': 'card'}`"
             @click="selectItem(item)">
           {{ item.description }}
         </li>
@@ -50,13 +49,20 @@ export default {
       selectedItem:"",
       myList:[
         {
+          id:0,
           top:"150px",
           left:"250px",
           right:null,
           duration:100,
           description:"Full-Stack Web Developer",
           explain:"A full-stack developer with 5+ year of experince in multiple framworks like React js, Angular, Vue Js, Node JS, and SpringBoot. Additionally have knowlegde in AWS, GCP, GitHub, Jenkins.",
-          icons:""
+          items:[
+            {
+              icon:"",
+              description:"",
+              title:""
+            }
+          ]
         },
         // {
         //   top:"300px",
@@ -66,6 +72,7 @@ export default {
         //   description:"My expertise spans frontend and backend development, with a strong focus on Angular, ReactJS, VueJS, Spring Boot, and NodeJS."
         // },
         {
+          id:1,
           top:"470px",
           left:"",
           right:"50px",
@@ -74,6 +81,7 @@ export default {
           explain:"I have experience leading teams, facilitating Agile processes, and ensuring smooth project deliveries"
         },
         {
+          id:2,
           top:"270px",
           left:"",
           right:"280px",
@@ -82,6 +90,7 @@ export default {
           explain:"I enjoy mentoring others as it helps me learn and grow as well."
         },
         {
+          id:3,
           top:"155px",
           left:"",
           right:"150px",

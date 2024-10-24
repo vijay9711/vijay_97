@@ -45,7 +45,7 @@ module.exports = {
       'gray-light': '#d3dce6',
       'red': '#bf4623',
       'darkGreen': '#323232',
-      'card': '#546E7A50'
+      'card': '#546E7A'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
