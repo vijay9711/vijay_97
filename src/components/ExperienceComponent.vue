@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white h-screen dark:bg-gray-dark flex items-center overflow-hidden relative"
+    class=" h-screen flex items-center overflow-hidden relative"
   >
   <!-- mobile -->
     <div class="lg:hidden md:block w-screen mt-10">
@@ -34,7 +34,7 @@
             :data-aos-delay="item.duration"
             data-aos-easing="ease-in-out"
             data-aos-offset="0"
-            class="border-l-4 shadow-lg border-l-gray-dark dark:border-l-white mx-10 p-3 my-2"
+            class="border-l-4 shadow-lg border-l-gray-dark bg-card dark:border-l-white mx-10 p-3 my-2"
           >
             <div class="m-auto">
               <h5
@@ -96,7 +96,7 @@
               ></div>
             </div>
             <div
-              class="h-[175px] sm:pe-8 text-left justify-items-end"
+              class="h-[175px] sm:pe-8 text-left justify-items-start"
               data-aos="fade-up"
               :data-aos-delay="item.duration"
               data-aos-easing="ease-in-out"

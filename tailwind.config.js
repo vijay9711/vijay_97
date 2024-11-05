@@ -33,6 +33,7 @@ module.exports = {
     },
     colors: {
       'white': "#ffffff",
+      'black': "#000000",
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
       'pink': '#ff49db',
@@ -44,7 +45,7 @@ module.exports = {
       'gray-light': '#d3dce6',
       'red': '#bf4623',
       'darkGreen': '#323232',
-      'card': '#546E7A50'
+      'card': '#546E7A'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -259,7 +260,12 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        display: ["group-hover", "hover"],
+        flexDirection: ['group-hover', 'hover', 'focus'],
+      }
+    },
   },
   plugins: [
     require('taos/plugin')
