@@ -96,7 +96,7 @@
               ></div>
             </div>
             <div
-              class="h-[175px] sm:pe-8 text-left justify-items-end"
+              class="h-[175px] sm:pe-8 text-left justify-items-start"
               data-aos="fade-up"
               :data-aos-delay="item.duration"
               data-aos-easing="ease-in-out"

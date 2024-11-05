@@ -260,7 +260,12 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        display: ["group-hover", "hover"],
+        flexDirection: ['group-hover', 'hover', 'focus'],
+      }
+    },
   },
   plugins: [
     require('taos/plugin')

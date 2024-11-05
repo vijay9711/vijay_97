@@ -21,7 +21,7 @@
       </div>
     </div>
     <div
-      class="lg:translate-y-full  transition-all duration-300 lg:group-hover:translate-y-0 tech-background rounded-lg flex flex-wrap lg:absolute lg:bottom-0 w-full py-3 h-fit"
+      class="lg:translate-y-full  transition-all duration-500 lg:group-hover:translate-y-0 tech-background rounded-lg flex flex-wrap lg:absolute lg:bottom-0 w-full py-3 h-fit"
     >
       <a
         class="bg-gray dark:bg-gray hover:bg-gray-dark dark:hover:bg-white rounded-full w-fit flex p-1 px-2 m-1 cursor-pointer"

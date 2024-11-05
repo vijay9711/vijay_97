@@ -100,7 +100,7 @@ export default {
         {
           name: "Property Management(HOMVA)",
           imgName: "propertyManagement",
-          about:"I developed a property management university project named HOMVA using React JSand Tailwind CSS for the frontend, and Spring Boot with JWT tokens for the backend. The project is completely secure, featuring logging, role-based access control, and functionalities to add, remove, and purchase properties.",
+          about:"I developed a property management university project named HOMVA using React JS and Tailwind CSS for the frontend, and Spring Boot with JWT tokens for the backend. The project is completely secure, featuring logging, role-based access control, and functionalities to add, remove, and purchase properties.",
           // siteLink: "https://vijay97.netlify.app/",
           github:"https://github.com/vijay9711/HOMVA-front-end",
           techUsed: [

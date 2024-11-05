@@ -97,7 +97,7 @@ export default {
 
       // Assign a circle to each point
       this.points.forEach((point) => {
-        point.circle = this.createCircle(point, 2 + Math.random() * 2, "rgba(255,255,255,0)");
+        point.circle = this.createCircle(point, 2 + Math.random() * 2, "rgba(255,255,255,0.3)");
       });
     },
 
@@ -112,7 +112,15 @@ export default {
           if (this.ctx && this.ctx.beginPath) {
             this.ctx.beginPath();
             this.ctx.arc(pos.x, pos.y, rad, 0, 2 * Math.PI, false);
-            this.ctx.fillStyle = `rgba(156,217,249,${this.active})`;
+            // console.log("theme status ", isDark.value);
+            if(isDark.value){
+              // this.ctx.fillStyle="white";
+              this.ctx.fillStyle = 'rgb(255 255 255 / 70%)';
+            }else{
+              // this.ctx.fillStyle="black";
+              this.ctx.fillStyle = 'rgb(0 0 0 / 100%)';
+            }
+            // this.ctx.fillStyle = 'rgb(255 255 255 / 50%)';
             this.ctx.fill();
           }
         },
@@ -154,22 +162,25 @@ export default {
         this.ctx.clearRect(0, 0, this.width, this.height);
         this.points.forEach((point) => {
           let dist = this.getDistance(this.target, point);
+
+          // Make the dots and lines visible only if the cursor is within a certain distance
           if (dist < 4000) {
             point.active = 0.3;
             point.circle.active = 0.6;
           } else if (dist < 20000) {
             point.active = 0.1;
             point.circle.active = 0.3;
-          } else if (dist < 40000) {
-            point.active = 0.02;
-            point.circle.active = 0.1;
           } else {
             point.active = 0;
             point.circle.active = 0;
           }
+          // Draw lines only if the cursor is within a certain range
+          if (dist < 20000) {
+            this.drawLines(point);
+            point.circle.draw();
+          }
 
-          this.drawLines(point);
-          point.circle.draw();
+          
         });
       }
       requestAnimationFrame(this.animate);
