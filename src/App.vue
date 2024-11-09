@@ -153,7 +153,9 @@ export default {
     },
 
     initAnimation() {
+      if (window.innerWidth > 768) {
       this.animate();
+      }
       this.points.forEach((point) => this.shiftPoint(point));
     },
 
@@ -175,7 +177,7 @@ export default {
             point.circle.active = 0;
           }
           // Draw lines only if the cursor is within a certain range
-          if (dist < 20000) {
+          if (dist < 20000 && window.innerWidth > 768) {
             this.drawLines(point);
             point.circle.draw();
           }
