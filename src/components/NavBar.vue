@@ -141,7 +141,11 @@ export default {
         {
           name:"Skills",
           path:"/skills"
-        }
+        },
+        // {
+        //   name:"Profile",
+        //   path:"/profile"
+        // }
       ]
     };
   },

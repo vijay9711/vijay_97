@@ -264,4 +264,12 @@ export default {
   z-index: -20;
   position: absolute;
 }
+.card-morphin{
+  /* box-shadow: 0 8px 16px 0 rgba(200, 201, 213, 0.37); */
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 7px );
+  border-radius: 10px;
+  @apply dark:bg-darkGlassCard bg-brightGlassCard;
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
 </style>

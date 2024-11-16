@@ -6,7 +6,7 @@ import ProjectComponent from "./components/ProjectComponent";
 // import HelloWorld from "./components/HelloWorld";
 // import AboutMe from "./components/AboutMe";
 import Skills from "./components/MySkills";
-
+import MyProfile from "./components/MyProfile";
 const routes = [
   {
     name:"Home",
@@ -36,6 +36,14 @@ const routes = [
   {
     name:"Skills",
     path: '/skills', component: Skills,
+    meta: {
+      enterClass: "animate__animated animate__fadeIn",
+      leaveClass: "animate__animated animate__fadeOut"
+    }
+  },
+  {
+    name:"Profile",
+    path: '/profile', component: MyProfile,
     meta: {
       enterClass: "animate__animated animate__fadeIn",
       leaveClass: "animate__animated animate__fadeOut"
