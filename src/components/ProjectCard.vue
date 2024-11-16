@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group card rounded-2xl bg-white dark:bg-card bg-opacity-100 min-h-[15rem] overflow-hidden relative"
+    class="group card rounded-2xl card-morphin bg-opacity-100 min-h-[15rem] overflow-hidden relative"
   >
     <div class="xs:p-3 md:p-5 text-left">
       <img
