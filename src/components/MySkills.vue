@@ -8,16 +8,12 @@
       @mouseenter="onHover(index)"
       @mouseleave="onLeave(index)"
     >
-    <!-- <div class="-z-1 rating text-8xl font-bold absolute right-3 top-2 opacity-25">5/<span class="text-4xl ">10</span></div> -->
-      <!-- <div class="dark:bg-gray-dark bg-white text-gray-dark dark:text-white rating z-1 rounded-bl-full p-5 w-15 text-md font-bold absolute top-0 right-0 justify-start align-top">5</div> -->
       <div :id="'card' + index" class="card-heading flex relative lg:flex-col xs:flex-row items-center justify-center overflow-hidden">
         <div v-html="skill.iconLink" class="icon lg:m-2 xs:flex xs:w-16 lg:w-auto"></div>
         <p class="name lg:text-lg xs:text-4xl sm:text-8xl font-semibold text-gray-700 dark:text-white text-gray-dark">
           {{ skill.title }}
-          <!-- <span class="group-hover:hidden w-100">5</span> -->
         </p>
       </div>
-
       <div :id="'description' + index" class="description xs:visible lg:h-36 lg:hidden w-full px-3 flex-wrap xs:h-40 xs:overflow-y-auto lg:overflow-auto">
           <p class="text-bold text-left">{{ skill.description }}</p>
       </div>
@@ -25,10 +21,6 @@
   </div>
 </template>
 
-<!-- data-aos="fade-up"
-data-aos-anchor-placement="top-bottom"
-:data-aos-delay="index * 200"
-data-aos-duration="1000" -->
 <script>
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
