@@ -1,5 +1,5 @@
 <template>
-  <div class="flex cards flex-wrap pt-10 xs:gap-4 lg:gap-10 overflow-y-auto is-scrollbar mb-10 w-5/6 h-[93vh] mx-auto xs:justify-center lg:justify-between">
+  <div class="flex cards flex-wrap pt-10 xs:gap-4 lg:gap-10 overflow-y-auto is-scrollbar w-5/6 h-[92vh] mx-auto xs:justify-center lg:justify-between">
     <div
       ref="container"
       v-for="(skill, index) in skills"
@@ -11,7 +11,7 @@
     <!-- <div class="-z-1 rating text-8xl font-bold absolute right-3 top-2 opacity-25">5/<span class="text-4xl ">10</span></div> -->
       <!-- <div class="dark:bg-gray-dark bg-white text-gray-dark dark:text-white rating z-1 rounded-bl-full p-5 w-15 text-md font-bold absolute top-0 right-0 justify-start align-top">5</div> -->
       <div :id="'card' + index" class="card-heading flex relative lg:flex-col xs:flex-row items-center justify-center overflow-hidden">
-        <div v-html="skill.iconLink" class="icon lg:m-2 xs:flex xs:w-24 lg:w-auto"></div>
+        <div v-html="skill.iconLink" class="icon lg:m-2 xs:flex xs:w-16 lg:w-auto"></div>
         <p class="name lg:text-lg xs:text-4xl sm:text-8xl font-semibold text-gray-700 dark:text-white text-gray-dark">
           {{ skill.title }}
           <!-- <span class="group-hover:hidden w-100">5</span> -->
