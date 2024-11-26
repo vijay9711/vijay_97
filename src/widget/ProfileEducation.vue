@@ -1,13 +1,14 @@
 <template>
   <div>
-    <p class="text-lg font-bold w-full text-left">Education</p>
+    <p class="text-lg font-bold w-full text-left mb-0">Education</p>
+    <div class="border-b mb-4 border-gradient-to-r border-card"></div>
     <div class="text-left">
-      <p class="xs:text-lg lg:text-md">Maharishi international university</p>
+      <p class="xs:text-lg lg:text-md font-semibold">Maharishi international university</p>
       <p class="xs:text-md lg:text-sm">Master's degree in computer sceince</p>
       <p class="opacity-80">2023-2026(on going)</p>
     </div>
     <div class="text-left mt-4">
-      <p class="xs:text-lg lg:text-md">Hindusthan college of engineering and technology</p>
+      <p class="xs:text-lg lg:text-md font-semibold">Hindusthan college of engineering and technology</p>
       <p class="xs:text-md lg:text-sm">B.tech in Information Technology</p>
       <p class="opacity-80">2015 - 2019</p>
     </div>
