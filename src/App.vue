@@ -17,6 +17,8 @@
           <component :is="Component"></component>
         </transition>
       </router-view> -->
+
+      <!-- vijay test changes -->
     </div>
   </div>
 </template>
