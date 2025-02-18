@@ -142,10 +142,10 @@ export default {
           name:"Skills",
           path:"/skills"
         },
-        // {
-        //   name:"Profile",
-        //   path:"/profile"
-        // }
+        {
+          name:"Profile",
+          path:"/profile"
+        }
       ]
     };
   },
