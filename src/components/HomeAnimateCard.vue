@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full h-full bg-white" id="anime-box">
+  <div class="relative w-full h-full" id="anime-box">
     <p class="dark:text-white text-8xl font-bold ">FULL<br/>STACK</p>
   </div>
 </template>
